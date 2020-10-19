@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:navigationIcon="@drawable/ic_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-12dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffffe1e1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvYoutube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_play"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Watch On Youtube"
+                        android:textColor="#ffec2d2d"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFDA9C"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvShareRecipe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_share"
+                        android:drawablePadding="15dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Share Recipe"
+                        android:textColor="#A66B08"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#C1F8CE"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvSource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_link"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Source"
+                        android:textColor="#ff2a7e2f"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgThumb"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="-90dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/ic_food_placeholder"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="-110dp"
+                        android:layout_marginBottom="50dp"
+                        app:cardBackgroundColor="#ffa000"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:id="@+id/imgFavorite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_favorite"
+                            android:tint="@android:color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-80dp"
+                        android:background="@drawable/bg_circle_radius_primary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Ingredients:"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvIngredients"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvMeasure"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Instructions:"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvInstructions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

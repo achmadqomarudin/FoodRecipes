@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Food Recipes</string>
+    <string name="quotes"><font color='black'>Make your own food,\nstay at </font><font color='#f18d46'>Home!</font></string>
+</resources>
