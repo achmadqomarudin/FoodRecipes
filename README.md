@@ -14,7 +14,7 @@ Repo to demonstrate FoodRecipes in Android app. This is a follow up on the youtu
 
 # Demo App
 
-![Demo Download](https://yt3dl.net/images/apk-download-badge.png){:height="700px" width="400px"}
+![Demo Download](https://www.inspirefm.org/wp-content/uploads/button-apk.png)
 
 <table style="width:100%">
   <tr>
