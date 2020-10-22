@@ -1,4 +1,4 @@
-# FoodRecipes
+# Food Recipes
 
 [![Platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
@@ -8,7 +8,7 @@
 🍱 A Food Recipes App using Kotlin &amp; API (https://www.themealdb.com/api.php) to view food blogs along with their recipes.
 
 # Source
-Repo to demonstrate FoodRecipes in Android app. This is a follow up on the youtube at :
+Repo to demonstrate Food Recipes in Android app. This is a follow up on the youtube at :
 
 [ResepMakanan](https://youtu.be/PX15pj-aHPU)
 
