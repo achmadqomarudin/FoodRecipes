@@ -14,7 +14,10 @@ Repo to demonstrate FoodRecipes in Android app. This is a follow up on the youtu
 
 # Demo App
 
-<a href="https://github.com/achmadqomarudin/FoodRecipes/releases/latest/download/app-demo.apk">
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
+<a href="https://github.com/achmadqomarudin/FoodRecipes/releases/latest/download/app-demo.apk" align="center">
   <img src="https://www.inspirefm.org/wp-content/uploads/button-apk.png" height="100">
 </a>
 
