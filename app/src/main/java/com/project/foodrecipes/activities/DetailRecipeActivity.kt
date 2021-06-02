@@ -135,8 +135,8 @@ class DetailRecipeActivity : AppCompatActivity() {
                                     for (n in 1 .. 20){
                                         val ingredient = temp.getString("strIngredient$n")
                                         val measure = temp.getString("strMeasure$n")
-                                        if (ingredient.trim() != "") tvIngredients.append("\n \u2022 $ingredient")
-                                        if (measure.trim() != "") tvMeasure.append("\n : $measure")
+                                        if (ingredient.trim() != "" && ingredient.trim() != "null") tvIngredients.append("\n \u2022 $ingredient")
+                                        if (measure.trim() != "" && measure.trim() != "null") tvMeasure.append("\n : $measure")
                                     }
 
                                 }
